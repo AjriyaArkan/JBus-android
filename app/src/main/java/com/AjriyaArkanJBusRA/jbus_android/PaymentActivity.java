@@ -1,16 +1,14 @@
 package com.AjriyaArkanJBusRA.jbus_android;
 
-import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.os.Bundle;
 
-
-public class BusView extends AppCompatActivity {
+public class PaymentActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.bus_view);
+        setContentView(R.layout.activity_payment);
     }
 }

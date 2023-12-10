@@ -7,19 +7,17 @@
     android:backgroundTint="#F69AFF"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".RegisterActivity">
-    <!--  Add this line  -->
-    <!--  Fill the linear layout with some components -->
+    tools:context=".RegisterRenterActivity">
+
     <TextView
+        android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:fontFamily="@font/alegreya_sc_bold"
         android:gravity="center"
         android:paddingBottom="10sp"
-        android:text="Register your account"
+        android:text="Register your Company"
         android:textColor="#000000"
-        android:textColorHint="#000000"
         android:textSize="34sp"
         android:textStyle="bold" />
 
@@ -31,27 +29,28 @@
         android:background="#00F4F6FB"
         android:fadingEdge="horizontal"
         android:orientation="vertical">
+        android:fontFamily="sans-serif-smallcaps"
 
         <EditText
-            android:id="@+id/register_name"
+            android:id="@+id/aboutme_name"
             android:layout_width="match_parent"
             android:layout_height="60sp"
             android:layout_marginTop="20dp"
             android:fontFamily="@font/amaranth"
-            android:hint="username"
+            android:hint="Company name"
             android:inputType="text"
             android:textColor="#000000"
             android:textColorHint="#000000" />
 
         <EditText
-            android:id="@+id/register_email"
+            android:id="@+id/aboutme_email"
             android:layout_width="match_parent"
             android:layout_height="60sp"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
             android:fontFamily="@font/amaranth"
-            android:hint="Email"
-            android:inputType="textEmailAddress"
+            android:hint="Address"
+            android:inputType="text"
             android:textColor="#000000"
             android:textColorHint="#000000" />
 
@@ -60,13 +59,13 @@
             android:layout_width="match_parent"
             android:layout_height="60sp"
             android:fontFamily="@font/amaranth"
-            android:hint="Password"
-            android:inputType="textPassword"
+            android:hint="Phone number"
+            android:inputType="number"
             android:textColor="#000000"
             android:textColorHint="#000000" />
 
         <Button
-            android:id="@+id/register_button"
+            android:id="@+id/register_now"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20sp"
